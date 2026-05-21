@@ -1,0 +1,18 @@
+[ Global ]
+# Map Arial requests to courier (forcing engine to use Courier metric calculations)
+Arial = courier
+
+[ PDF:Subset ]
+# Force PDF Driver to subset the Courier metric calculations directly using Arial TrueType fonts,
+# effectively bypassing the Base14 un-embedded PDF restriction!
+# Replace <ORACLE_HOME> with your absolute path, or keep only "arial.ttf" if TK_ADMIN is set correctly.
+
+Courier..Italic.Bold.. = "arialbi.ttf"
+Courier...Bold..       = "arialbd.ttf"
+Courier..Italic...     = "ariali.ttf"
+Courier.....           = "arial.ttf"
+
+courier..Italic.Bold.. = "arialbi.ttf"
+courier...Bold..       = "arialbd.ttf"
+courier..Italic...     = "ariali.ttf"
+courier.....           = "arial.ttf"
